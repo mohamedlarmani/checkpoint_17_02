@@ -38,7 +38,7 @@ public class TainingDao {
                 double heartRate = rs.getDouble("HEART_RATE");
                 int trainingSession = rs.getInt("TRAINING_SESSION");
                 //Arrivato qua :/
-                newTrainingSessionWithData = new TrainingSessionWithData();
+
             }
 
             return newTrainingSessionWithData;

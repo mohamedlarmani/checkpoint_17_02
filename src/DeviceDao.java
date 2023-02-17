@@ -17,8 +17,8 @@ public class DeviceDao {
 
             while(rs.next()){
                 String devicePartNumber = rs.getString("DEVICE_PART_NUMBER");
-                String deviceManufacturer = rs.getString("DEVICE_MANUFACTURER");
-                String deviceModel = rs.getString("DEVICE_MODEL");
+                String deviceManufacturer = rs.getString("DEVICE_MANUFACTURER").toLowerCase();
+                String deviceModel = rs.getString("DEVICE_MODEL").toUpperCase();
                 short deviceHasGps = rs.getShort("DEVICE_HAS_GPS");
                 short deviceHasHeartRate = rs.getShort("DEVICE_HAS_HEARTRATE");
                 String username = rs.getString("USERNAME");
